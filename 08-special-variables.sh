@@ -9,7 +9,7 @@ echo "Home directory of current user: $HOME"
 echo "Which user is running the script: $USER"
 echo "Hostname: $HOSTNAME"
 echo "Process ID of current shell script $$"
-sleep 60 
+sleep 60 &
 echo "Process ID went to background command: $!"
 
 
