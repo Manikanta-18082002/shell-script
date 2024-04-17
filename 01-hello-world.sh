@@ -10,11 +10,11 @@ echo "Jagan:: not bad. I am thinking to upgrade to DevOps"
 # Draw back repeated words
 # Solution?  use variable
 echo
-#declaring of varible
-PERSON1=Sachin #no space between = and value
-PERSON2=Rahul
 
-echo
+#declaring of varible
+PERSON1=Surya #no space between = and value
+PERSON2=Mani
+
 #referring variable
 echo "$PERSON1:: Hello $PERSON2, How are you?"
 echo "${PERSON2}:: Hi $PERSON1, I am fine. How are you?"
