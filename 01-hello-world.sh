@@ -40,6 +40,7 @@ echo "Enter password"
 read -s PASSWORD
 
 echo "Username is: $USERNAME, and password is: $PASSWORD"
+echo
 
 # Array's 06
 MOVIES=("RRR" "DjTillu" "murari") # size of above array is 3.
@@ -49,7 +50,7 @@ MOVIES=("RRR" "DjTillu" "murari") # size of above array is 3.
 echo "First Movie is: ${MOVIES[0]}"
 echo "Second Movie is :${MOVIES[1]}"
 echo "Third Movie is :${MOVIES[2]}"
-
+echo "All (everything: @) Movie is :${MOVIES[@]}"
 
 
 
