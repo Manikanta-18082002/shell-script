@@ -32,8 +32,14 @@ echo "$PERSON1:: I am fine too. how is your work?"
 echo "$PERSON2:: not bad. I am thinking to upgrade to DevOps"
 
 
+# taking input from user 05
+echo "Enter user Name"
+read USERNAME
 
+echo "Enter password"
+read -s PASSWORD
 
+echo "Username is: $USERNAME, and password is: $PASSWORD"
 
 
 
