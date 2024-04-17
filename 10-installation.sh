@@ -7,7 +7,6 @@ then
     echo "You must be a ROOT USER"
 else
     echo "You are the ROOT USER"
-if
-
+fi
 
 dnf install mysql -y
