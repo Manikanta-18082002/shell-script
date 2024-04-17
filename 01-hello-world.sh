@@ -50,9 +50,15 @@ MOVIES=("RRR" "DjTillu" "murari") # size of above array is 3.
 echo "First Movie is: ${MOVIES[0]}"
 echo "Second Movie is :${MOVIES[1]}"
 echo "Third Movie is :${MOVIES[2]}"
-echo "All (everything: @) Movie is :${MOVIES[@]}"
+echo "Everything is :${MOVIES[@]}"
 
+#07 Data types
+num1=$1
+num2=$2
 
+SUM=$($num1+$num2)
+
+echo "Total of $num1 and $num2 is: $SUM"
 
 
 
