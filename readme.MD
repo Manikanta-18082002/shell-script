@@ -26,8 +26,9 @@ git config --global credential.helper store
 ```
 
 * To run all 3 command at a time
+```
 git add . ; git commit -m "some-message"; git push -u origin main
-
+```
 
 
 
