@@ -10,4 +10,25 @@ else
     echo "You are the ROOT USER"
 fi
 
-dnf install mysql -y
+dnf install mysqll -y
+
+if [$? -ne 0]
+then
+    echo "Installation is Failed :( "
+    exit 1
+fi
+
+dnf install git -y
+
+echo ".....Checking ..... Scripts......"
+
+
+
+
+
+
+
+
+
+
+
