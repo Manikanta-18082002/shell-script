@@ -35,6 +35,7 @@ echo "$PERSON2:: not bad. I am thinking to upgrade to DevOps"
 # taking input from user 05
 echo "Enter user Name"
 read USERNAME
+#OR --->  read -p "Enter Name: " USERNAME  (-p prompt to display text)
 
 echo "Enter password"
 read -s PASSWORD
