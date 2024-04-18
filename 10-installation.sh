@@ -43,7 +43,7 @@ else
     echo "You are a root User"
 fi
 
-dnf install mysql -y
+dnf install mysqll -y
 
 if [ $? -ne 0 ]
 then
