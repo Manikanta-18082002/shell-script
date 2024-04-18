@@ -7,4 +7,4 @@ CARS=("BMW", "AUDI", "Jaguar")
 
 echo "1st item is: ${CARS[0]}" 
 echo "3rd Item is: ${CARS[2]}"
-echo "All Items use @: ${CARS[@]}"
+echo "Display all Items use @: ${CARS[@]}"
