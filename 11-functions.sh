@@ -2,11 +2,15 @@
 
 USERID=$(id -u)
 
+TIMESTAMP=$( date +%F-%H-%M-%S)
+LOGFILE=
+
+
 VALIDATE(){
-    if [ $? -ne 0 ]
+    if [ $1 -ne 0 ]
     then
         echo  "$2 FAILURE"
-        exit 4
+        exit 400
     else
         echo "$2 SUCCESS"
     fi
