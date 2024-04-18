@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Enter username: "
-read USERNAME
+#echo "Enter username: "
+#read USERNAME
 #OR 
-# echo -p "Enter username" USERNAME (-p prompt to display text)
+ read -p "Enter username" USERNAME #(-p prompt to display text)
 
 echo "Enter password"
 read -s PASSWORD  # -s input silent or hidden. (Secure)
