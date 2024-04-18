@@ -9,6 +9,7 @@ else
     echo "$NUMBER is lesser that 10"
 fi
 
-# -gt, -lt, -eq, le
+# -gt, -lt, -eq, -le
 
-#To accept only integers (-i): declare -i x=23  
+#To accept only integers-> (-i): ---> declare -i x=23  
+
