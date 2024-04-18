@@ -1,5 +1,7 @@
 #!/bin/bash
-# shebang is the location interpreter, commands written inside shell script is interpreted and executed by this shebang
+#   #! (hash-bang)
+# shebang ( the first line in any Linux shell script) is the location interpreter, commands written inside 
+# shell script is interpreted and executed by this shebang
 
 echo "Iam learning Devops with AWS"
 
