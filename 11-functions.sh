@@ -3,7 +3,7 @@
 USERID=$(id -u)
 
 TIMESTAMP=$( date +%F-%H-%M-%S) #Executing command in shell script and  taking output in variable
-SCRIPT_NAME=$($0 | cut -d "." -f1) # $0 : Script Name  (Ex: echo 11-functions.sh | cut -d "." -f1)
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1) # $0 : Script Name  (Ex: echo 11-functions.sh | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log #(In temp directoy lo name hypen timestamp.log (File))
 
 
