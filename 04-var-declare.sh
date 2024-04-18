@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# declaring of variables
-P1=manoj
-P2=kanta
+# declaring of variables (In Comand Line)
+P1=$1
+P2=$2
 
 #referring  variables
 echo "$P1:: Hello $P2, How are you?"
