@@ -1,65 +1,33 @@
 #!/bin/bash
 
-# USERID=$(id -u) # Read output and store in a variable
-
-# if [ $USERID -ne 0 ]
-# then
-#     echo "You must be a ROOT USER"
-#     exit 1 #Manually exit if error comes
-# else
-#     echo "You are the ROOT USER"
-# fi
-
-# dnf install mysql -y
-
-# if [ $? -ne 0 ]
-# then
-#     echo "Installation is Failed :( "
-#     exit 1
-# else
-#     echo "Installation is Success.."
-# fi
-
-# dnf install git -y
-# if [ $? -ne 0 ]
-# then
-#     echo "Installation is Failed :( "
-#     exit 1
-# else
-#     echo "Installation is Success.."
-# fi
-
-# echo ".....Checking ..... Scripts......"
-
-
-
-USERID=$(id -u)
+USERID=$(id -u) # Read output and store in a variable
 
 if [ $USERID -ne 0 ]
 then
-    echo "You must be a root user...."
-    exit 2
+    echo "You must be a ROOT USER"
+    exit 1 #Manually exit if error comes
 else
-    echo "You are a root User"
+    echo "You are the ROOT USER"
 fi
 
 dnf install mysql -y
 
 if [ $? -ne 0 ]
 then
-    echo "Installation failed"
+    echo "Installation is Failed :( "
     exit 1
 else
-    echo "Success installed"
+    echo "Installation is Success.."
 fi
 
-echo "Testing something"
+dnf install git -y
+if [ $? -ne 0 ]
+then
+    echo "Installation is Failed :( "
+    exit 1
+else
+    echo "Installation is Success.."
+fi
 
-
-
-
-
-
-
-
+echo ".....Checking ..... Scripts......"
 
