@@ -2,8 +2,9 @@
 
 USERID=$(id -u)
 
-TIMESTAMP=$( date +%F-%H-%M-%S)
-LOGFILE=
+TIMESTAMP=$( date +%F-%H-%M-%S) #Executing command in shell script and  taking output in variable
+SCRIPT_NAME=$($0 | cut -d "." -f1) # $0 : Script Name  (Ex: echo 11-functions.sh | cut -d "." -f1)
+LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log #(In temp directoy lo name hypen timestamp.log (File))
 
 
 VALIDATE(){
@@ -24,8 +25,8 @@ else
     echo "You are the ROOT USER"
 fi
 
-dnf install mysql -y
+dnf install mysql -y &>> LOGFILE
 VALIDATE $? "Installing MYSQL is...."
 
-dnf install git -y
+dnf install git -y &>> LOGFILE
 VALIDATE $? "Installing GIT is....."
