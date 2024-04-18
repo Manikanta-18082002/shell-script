@@ -1,15 +1,8 @@
 #!/bin/bash
+# shebang is the location interpreter, commands written inside shell script is interpreted and executed by this shebang
 
 echo "Iam learning Devops with AWS"
-echo
-# Simple Conversation 02
-echo "Mani:: Hello Suresh, How are you?"
-echo "Jagan:: Hi Mani, I am fine. How are you?"
-echo "Mani: I am fine too. how is your work?"
-echo "Jagan:: not bad. I am thinking to upgrade to DevOps"
-# Draw back repeated words
-# Solution?  use variable
-echo
+
 
 #declaring of varible 03
 PERSON1=Surya #no space between = and value
