@@ -35,9 +35,10 @@
 
 USERID=$(id -u)
 
-if [ USERID -ne 0 ]
+if [ $USERID -ne 0 ]
 then
     echo "You must be a root user...."
+    exit 2
 else
     echo "You are a root User"
 fi
@@ -46,9 +47,10 @@ dnf install mysql -y
 
 if [ $? -ne 0 ]
 then
-    echo "Success installed"
-else
     echo "Installation failed"
+    exit 1
+else
+    echo "Success installed"
 fi
 
 echo "Testing something"
