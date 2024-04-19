@@ -22,6 +22,7 @@ VALIDATE(){
         echo -e "$2....$G SUCCESS $N"
     fi
 }
+
 if [ $USERID -ne 0 ]
 then
     echo "You must be a ROOT USER"
