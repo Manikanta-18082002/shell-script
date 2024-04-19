@@ -32,6 +32,7 @@ do
         echo -e "$i already installed... $Y Skipping $N"
     else
         echo "$i not installed....Need to install"
+    fi
 done
 
 
