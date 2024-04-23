@@ -16,7 +16,7 @@ else
     exit 1
 fi
 
-FILEs=$( find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
+FILES=$( find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
 #(Find  current to previous 14 day's files)
 
 echo "Files to delete: $FILES"
