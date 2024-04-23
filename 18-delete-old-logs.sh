@@ -19,7 +19,7 @@ fi
 FILES=$( find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
 #(Find  current to previous 14 day's files)
 
-echo "Files to delete: $FILES"
+#echo "Files to delete: $FILES"
 
 # IFS -> Input Feild Seperator
 
