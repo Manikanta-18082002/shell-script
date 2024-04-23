@@ -5,7 +5,7 @@ set -e # It is similar to VALIDATE Command
 failure(){
     echo "Failed at $1: $2"
 }
-trap 'failure ${LINENO} $BASH_COMMAND"' ERR 
+trap 'failure ${LINENO} "$BASH_COMMAND"' ERR 
 # VALIDATE --> Human Manually check for error
 # set -e --> Shell Script Manually check for Error
             #Used for crontab shedule
