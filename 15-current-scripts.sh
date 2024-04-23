@@ -10,11 +10,16 @@ echo "Before calling other script, course: $COURSE"
 echo "Process ID of current shell script: $$"
  
  # ./16-other-scripts.sh
-# Variable values will not change after calling other scripts
-#PID of 2 scripts are different
+# Variable values NOT CHANGE after calling other scripts
+#OR
+# Changes happened in other scripts NOT Affect Current Script
+#PID of 2 scripts are DIFFERENT (Changed)
 
 source ./16-other-scripts.sh
-
+# Variable values CHANGES after calling other scripts
+#OR
+# Changes happened in other scripts WILL Affect Current Script
+#PID of 2 scripts are NOT Changed (Same)
 
 
 echo "After calling other script, course: $COURSE"
