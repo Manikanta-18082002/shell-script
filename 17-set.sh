@@ -19,7 +19,7 @@ else
     echo "You are the ROOT USER"
 fi
 
-dnf install mysql -y
+dnf install mysqll -y
 
 dnf install git -y
 
