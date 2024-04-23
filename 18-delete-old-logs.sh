@@ -23,7 +23,7 @@ echo "Files to delete: $FILES"
 
 # IFS -> Input Feild Seperator
 
-while IFS = read -r line #By using line take seperate
+while IFS= read -r line #By using line take seperate
 do
     echo "Deleting file: $line"
 done <<<$FILES #Input to while
