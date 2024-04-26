@@ -17,7 +17,7 @@ do
     fi
 done <<<$DISK_USAGE
 
-echo -e "$R Message:$N $MESSAGE" 
+echo -e "$R Message$N: $MESSAGE" 
 # -e: used to enable interpretation of backslash escapes in the string being printed.
 # Without the -e: echo will simply print the string as it is (including \n in CL)
 
