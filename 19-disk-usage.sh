@@ -4,6 +4,9 @@ DISK_USAGE=$(df -hT | grep xfs) # T: type
 DISK_THRESHOLD=3
 MESSAGE="" # Mentioned out? TO fetch Variables from While Loop
 
+R="\e[30m"
+N="\e[0m"
+
 while IFS= read -r line
 do
     USAGE=$(echo $line | awk -F " " '{print $6F}' | cut -d "%" -f1 ) #To get current Usage Value...
@@ -14,9 +17,9 @@ do
     fi
 done <<<$DISK_USAGE
 
-echo "Message: $MESSAGE" 
+echo -e "$R Message:$N $MESSAGE" 
 # -e: used to enable interpretation of backslash escapes in the string being printed.
-# Without the -e: echo will simply print the string as it is
+# Without the -e: echo will simply print the string as it is (including \n in CL)
 
 echo "$MESSAGE" | mail -s "Disk Usage Alert" konugantimanikantareddy@gmail.com
 # echo "body"   | mail -s "subject" to-address
