@@ -36,7 +36,8 @@ fi
 for i in $@
 do
     echo "Package to install: $i"
-    dnf list installed $i &>>$LOGFILE
+    # It tells DNF to list the installed packages that match the pattern specified by the variable $i. 
+    dnf list installed $i &>>$LOGFILE 
     if [ $? -eq 0 ]
     then
         echo -e "$i already installed... $Y Skipping $N"
