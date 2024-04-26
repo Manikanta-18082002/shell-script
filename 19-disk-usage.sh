@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DISK_USAGE=$(df -hT | grep xfs) # T: type
-DISK_THRESHOLD=3
+DISK_THRESHOLD=6
 MESSAGE="" # Mentioned out? TO fetch Variables from While Loop
 
 G="\e[32m"
