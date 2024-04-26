@@ -15,7 +15,8 @@ do
 done <<<$DISK_USAGE
 
 echo -e "Message: $MESSAGE" 
-
+# -e: used to enable interpretation of backslash escapes in the string being printed.
+# Without the -e: echo will simply print the string as it is
 
 echo "$MESSAGE" | mail -s "Disk Usage Alert" konugantimanikantareddy@gmail.com
 # echo "body"   | mail -s "subject" to-address
