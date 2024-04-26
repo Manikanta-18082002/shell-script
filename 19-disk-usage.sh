@@ -4,7 +4,7 @@ DISK_USAGE=$(df -hT | grep xfs) # T: type
 DISK_THRESHOLD=3
 MESSAGE="" # Mentioned out? TO fetch Variables from While Loop
 
-R="\e[31m"
+G="\e[32m"
 N="\e[0m"
 
 while IFS= read -r line
@@ -17,7 +17,7 @@ do
     fi
 done <<<$DISK_USAGE
 
-echo -e "$R Message$N: $MESSAGE" 
+echo -e "$G Message$N: $MESSAGE" 
 # -e: used to enable interpretation of backslash escapes in the string being printed.
 # Without the -e: echo will simply print the string as it is (including \n in CL)
 
