@@ -21,7 +21,7 @@ FILES=$( find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
 
 #echo "Files to delete: $FILES"
 
-# IFS -> Input Feild Seperator (NO leading & trailing whitespace)
+# IFS -> Input Field Seperator (NO leading & trailing whitespace)
 while IFS= read -r line #By using line take seperate
 do
     echo "Deleting file: $line"
